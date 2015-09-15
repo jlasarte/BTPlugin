@@ -9,7 +9,7 @@
  */
  var BTPlugin = {
 
- 	getMacAddress: function(successCallback, failureCallback){
+ 	enableVisibility: function(successCallback, failureCallback){
  		cordova.exec(successCallback, failureCallback, 'BTPlugin',
  			'enableVisibility', []);
  	}
