@@ -13,7 +13,7 @@ import android.bluetooth.BluetoothAdapter;
 /**
  * The Class MacAddressPlugin.
  */
-public class MacAddressPlugin extends CordovaPlugin {
+public class BTPlugin extends CordovaPlugin {
 
     public boolean isSynch(String action) {
         if (action.equals("enableVisibility")) {
