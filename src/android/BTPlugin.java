@@ -72,7 +72,8 @@ public class BTPlugin extends CordovaPlugin {
         Intent discoverableIntent = new
         Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
         discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 300);
-        //startActivity(discoverableIntent);
+        Context context=this.cordova.getActivity().getApplicationContext();
+        context.startActivity(discoverableIntent);
 
         return "...";
     }
