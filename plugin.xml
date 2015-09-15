@@ -18,7 +18,7 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="BTPlugin">
-        <param name="android-package" value="com.github.jlasarte.BTPlugin"/>
+        <param name="android-package" value="com.github.jlasarte.BTPlugin.BTPlugin"/>
       </feature>
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/*">
