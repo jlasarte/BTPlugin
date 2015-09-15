@@ -71,6 +71,7 @@ public class BTPlugin extends CordovaPlugin {
        // macAddress = wm.getConnectionInfo().enableVisibility();
         Intent discoverableIntent = new
         Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
+        discoverableIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 300);
         Context context=this.cordova.getActivity().getApplicationContext();
         context.startActivity(discoverableIntent);
